@@ -1,4 +1,4 @@
-# Build
+# userlandmylove
 
 userland latency archeograph that interrogates the vDSO in memory to resolve `__vdso_clock_gettime`/`__kernel_clock_gettime`/`__vdso_gettimeofday` and bypassing `dlsym` and glibc indirections entirely. it emits syscall micro latency telemetry and contrasts raw `syscall(2)` paths against libc trampolines, and surfaces ABI, kernel and microarchitectural artifacts as a reproducible fingerprint
 
